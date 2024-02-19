@@ -29,10 +29,10 @@ a:hover {
 
 #languagePickerContainer {
     padding: 5px;
-    background-color: grey;
     border: 1px solid green;
     border-radius: 5px;
     display: inline-block;
+    float: right;
 }
 
 img.decoration {
