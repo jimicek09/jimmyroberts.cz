@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    let currentLanguage = "en"; // possible values: "en", "cs"
+    let currentLanguage = "cs"; // possible values: "en", "cs"
     const languageSelector = document.getElementById('languagePicker');
 
     if (window.localStorage.getItem("language") === "cs") {
