@@ -2,26 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        a {
-            padding: 5px;
-            backround-color: grey;
-            border: 1px solid green;
-            border-radius: 5px;
-            display: inline-block;
-            text-decoration: none;
-        }
-        a:hover {
-            background-color: red;
-            color:yellow;
-        }
-    </style>
+    <title>Jimmy Roberts Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a href="home.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
-<!--<button onclick="location.href='projects.html'">projects</button>-->
+<h1>Jimmy Roberts</h1>
+<!--<div id="languagePickerContainer">-->
+<!--    <label for="languagePicker">Select Language</label>-->
+<!--    <select id="languagePicker" onchange="changeLanguage()">-->
+<!--        <option value="cs">Czech</option>-->
+<!--        <option value="en">English</option>-->
+<!--    </select>-->
+<!--</div>-->
+<div id="menu">
+    <a class="selected menuButton" href="index.html">Home</a>
+    <a class="menuButton" href="projects-programming.html">Programming</a>
+    <a class="menuButton" href="projects-other.html">Other Projects</a>
+    <a class="menuButton" href="contact.html">Contact</a>
+</div>
+<h2>Portfolio</h2>
+<div id="content">
+    <p>Welcome to my portfolio. I am a 9th grade school student living in Lety, Czech Republic.</p>
+    <p>I am interested in programming and I love to create web applications. I am currently learning HTML, CSS and
+        JavaScript. I am also interested in learning new languages. I am bilingual in English and Czech</p>
+    <p>
+        I have created this website to showcase my projects and to share my contact information. I hope you enjoy
+        looking at my work.
+    </p>
+</div>
+<script src="app.js" />
 </body>
 </html>
