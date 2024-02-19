@@ -1,6 +1,5 @@
 html, body {
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -14,10 +13,10 @@ a {
 
 a.menuButton {
     padding: 10px;
-    backround-color: grey;
     border: 1px solid green;
     border-radius: 5px;
     display: inline-block;
+    margin: 8px;
 }
 a.selected {
     background-color: green;
@@ -34,4 +33,18 @@ a:hover {
     border: 1px solid green;
     border-radius: 5px;
     display: inline-block;
+}
+
+img.decoration {
+    float: right;
+    margin: 20px;
+    width: 300px;
+
+}
+img.artwork {
+    width: 600px;
+}
+img.projectImage {
+    width: 200px;
+    margin: 0 5px;
 }
