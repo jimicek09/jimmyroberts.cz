@@ -7,15 +7,17 @@ html, body {
     color: #333;
     padding: 20px
 }
+a {
+    color: #0074d9;
+    text-decoration: none;
+}
 
 a.menuButton {
-    color : #0074d9;
     padding: 10px;
     backround-color: grey;
     border: 1px solid green;
     border-radius: 5px;
     display: inline-block;
-    text-decoration: none;
 }
 a.selected {
     background-color: green;
