@@ -11,7 +11,6 @@ a {
     color: #0074d9;
     text-decoration: none;
 }
-
 a.menuButton {
     padding: 10px;
     border: 1px solid green;
@@ -27,7 +26,6 @@ a:hover {
     background-color: red;
     color:yellow;
 }
-
 #languagePickerContainer {
     padding: 5px;
     border: 1px solid green;
@@ -35,7 +33,6 @@ a:hover {
     display: inline-block;
     float: right;
 }
-
 img.decoration {
     float: right;
     margin: 20px;
