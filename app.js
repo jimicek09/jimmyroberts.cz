@@ -100,14 +100,14 @@ window.onload = function() {
 
     const languageSelector = document.getElementById('languagePicker');
     const translatables = document.querySelectorAll('[data-tk]');
-    let currentLanguage = "cs"; // possible values: "en", "cs"
+    let currentLanguage; // possible values: "en", "cs"
 
-    if (window.localStorage.getItem("language") === "cs") {
-        currentLanguage = "cs";
-        languageSelector.value = "cs";
-    } else {
+    if (window.localStorage.getItem("language") === "en") {
         currentLanguage = "en";
         languageSelector.value = "en";
+    } else {
+        currentLanguage = "cs";
+        languageSelector.value = "cs";
     }
 
     languageSelector.addEventListener('change', function(event) {
