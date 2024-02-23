@@ -1,6 +1,6 @@
 html, body {
     margin: 0;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Avenir";
     font-size: 16px;
     line-height: 1.5;
     color: #333;
@@ -13,8 +13,8 @@ a {
 }
 a.menuButton {
     padding: 10px;
-    border: 1px solid green;
-    border-radius: 5px;
+    border: 1px solid #0064d9;
+    border-radius: 10px;
     display: inline-block;
     margin: 8px;
 }
@@ -23,13 +23,13 @@ a.selected {
     color: white;
 }
 a:hover {
-    background-color: red;
-    color:yellow;
+    background-color: #0074d9;
+    color: white;
 }
 #languagePickerContainer {
     padding: 5px;
-    border: 1px solid green;
-    border-radius: 5px;
+    border: 1px solid #0064d9;
+    border-radius: 10px;
     display: inline-block;
     float: right;
 }
