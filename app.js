@@ -90,12 +90,12 @@ const czechStrings = {
     HEADING_POTTERY: "Keramika",
     TEXT_POTTERY: "Keramiku dělám už sedm let od té dobý jsem udělal mnoho výrobků.\nOd miniaturního Stolečku na psaní k jedné věži Tower Bridge.",
     HEADING_WOODWORK: "Truhlářství",
-    TEXT_WOODWORK: "Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Ut tempus purus at lorem. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.",
+    TEXT_WOODWORK: "U táty máme docela dobrou dílnu s nářadím, kde občas vyrobíme věci.\nTaké jsem chodil k Martimovy Svobodnímu na hodiny řezbářství.",
     HEADING_ORIGAMI: "Origami",
-    TEXT_ORIGAMI: "Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Ut tempus purus at lorem. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.",
+    TEXT_ORIGAMI: "Jednu dobu jsem mšl zálibu v skládání z papíru.",
     TITLE_TAG_CONTACT_PAGE: "Jimmy Roberts - Kontakt",
     TITLE_CONTACT_PAGE: "Kontaktujte mě",
-    TEXT_CONTACT_P1: 'Etiam commodo dui eget wisi. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Mauris elementum mauris vitae tortor.'
+    TEXT_CONTACT_P1: "Kdybi jste měli otázky tak mě prosím kontaktujte\n773 000 976 a/nebo jimmyroberts2009@gmail.com děkuji za návštěvu mé webovky.   :-)"
 }
 
 window.onload = function() {
