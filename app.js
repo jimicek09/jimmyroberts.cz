@@ -74,10 +74,10 @@ const czechStrings = {
     TEXT_JIMMYROBERTSCZ: "Tuto stránku jsem udělal v poslední chvíli v HTML.\nDal jsem sem všechny mé významnější projekty.",
     TITLE_TAG_DESIGN_PAGE: "Jimmy Roberts - Design",
     TITLE_DESIGN_PAGE: "Design Projekty",
-    TEXT_DESIGN_P1: "Tyhle hry jsem pouze navrhl. U Tanku a Caru jsem byl\npřítomen při výrobě a navrhoval jsem uživatelské rozhraní.",
+    TEXT_DESIGN_P1: "Tyhle hry jsem pouze navrhl. U TANK a CAR jsem byl\npřítomen při výrobě a navrhoval jsem uživatelské rozhraní.",
     TEXT_SPELLITIN_REACT: "Tuto verzi hry Spell It In vytvořil můj táta,\nkterý se inspiroval mnou.",
     TEXT_CAR: "Osobně jsem se podílel na tvorbě tohoto projektu a navrhoval\njsem vše. CAR je druhý nejstarší společný projekt.\nI když jsem do něj neprogramoval, sledoval jsem, jak táta pracuje, a vysvětloval mi, jak to funguje.",
-    TEXT_TANK_1: "Tank je můj nejstarší projekt, a celý jsem ho navrhl a navrhl uživatelské rozhraní. Při jeho vytváření jsem\nbyl také přítomen a sledoval jsem celý proces a vysvětloval mi vše.",
+    TEXT_TANK_1: "TANK je můj nejstarší projekt, a celý jsem ho navrhl a\nnavrhl uživatelské rozhraní. Při jeho vytváření jsem\nbyl také přítomen a sledoval jsem celý proces a  bylo mi vysvětlováno vše.",
     TEXT_TANK_2: "Ovládání",
     LI_MOVE_UP: "S - pohyb tanku nahoru",
     LI_MOVE_DOWN: "X - pohyb tanku dolů",
@@ -86,16 +86,16 @@ const czechStrings = {
     LI_FIRE: "Mezerník - střelba",
     TITLE_CREATIVE_PAGE: "Kreativní",
     HEADING_PIANO: "Klavír",
-    TEXT_PIANO: "Na klaváýr hraju už sedm let a mezi tím jsem se naučil mnoho skladeb mezi mé \nnejoblíbenější patří Vlatva od B.Smetany, turecky pochod od W.A.Mozarta a Sonata No. 16 od W.A.Mozarta.",
+    TEXT_PIANO: "Na klavír hraji už sedm let a mezi tím jsem se naučil mnoho skladeb.\nMezi mé nejoblíbenější patří Vltava od B. Smetany, Turecký pochod od W. A. Mozarta a Sonata č. 16 od W. A. Mozarta.",
     HEADING_POTTERY: "Keramika",
-    TEXT_POTTERY: "Keramiku dělám už sedm let od té dobý jsem udělal mnoho výrobků.\nOd miniaturního Stolečku na psaní k jedné věži Tower Bridge.",
+    TEXT_POTTERY: "Keramiku dělám už sedm let, od té doby jsem vyrobil mnoho výrobků.\nOd miniaturního stolečku na psaní až po jednu věž Tower Bridge.",
     HEADING_WOODWORK: "Truhlářství",
-    TEXT_WOODWORK: "U táty máme docela dobrou dílnu s nářadím, kde občas vyrobíme věci.\nTaké jsem chodil k Martimovy Svobodnímu na hodiny řezbářství.",
+    TEXT_WOODWORK: "U tátovy máme docela dobrou dílnu s nářadím, kde občas vyrobíme věci.\nTaké jsem chodil k Martinu Svobodnému na hodiny řezbářství.",
     HEADING_ORIGAMI: "Origami",
-    TEXT_ORIGAMI: "Jednu dobu jsem mšl zálibu v skládání z papíru.",
+    TEXT_ORIGAMI: "Jednu dobu jsem měl zálibu v skládání z papíru.",
     TITLE_TAG_CONTACT_PAGE: "Jimmy Roberts - Kontakt",
     TITLE_CONTACT_PAGE: "Kontaktujte mě",
-    TEXT_CONTACT_P1: "Kdybi jste měli otázky tak mě prosím kontaktujte\n773 000 976 a/nebo jimmyroberts2009@gmail.com děkuji za návštěvu mé webovky.   :-)"
+    TEXT_CONTACT_P1: "Kdybyste měli otázky, kontaktujte mě, prosím,\nna čísle 773 000 976 a/nebo na emailu jimmyroberts2009@gmail.com. Děkuji za návštěvu mé webové stránky. :-)"
 }
 
 window.onload = function() {
