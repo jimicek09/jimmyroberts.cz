@@ -9,8 +9,8 @@ and hosted on Netlify on the URL https://jimmyroberts.cz.
 ## How to add text to the site
 1. Find the HTML file for the page you want to edit
 2. Add, edit or remove the text
-3. If you need to translate the text, add a `data-tk` attribute to the element containing the text and set a value for the 
-   translation. e.g. `data-tk="TEXT_ABOUT_ME"`. (Translation is in uppercase with underscores between words)
-4. if you want to edit the app.js file add a translation and both the translation texts for each language.
-5. Commit and push the changes to the `main` branch of the repository. The site will be automatically appear 
-   to the public URL by Netlify.
+3. If you need to translate the text, add a `data-tk`(a translate key) attribute to the text element and set a value for the 
+   translation key. e.g. `data-tk="TEXT_ABOUT_ME"`. (The translation key is in uppercase with underscores between words)
+4. if you want to edit the app.js file and add a translation key add both the translation texts for each language.
+5. Commit and push the changes to the `main` branch of the repository. The site will automatically appear 
+   on the public URL by Netlify.
