@@ -97,11 +97,12 @@ const czechStrings = {
     TITLE_CONTACT_PAGE: "Kontaktujte mě",
     TEXT_CONTACT_P1: "Kdybyste měli otázky, kontaktujte mě, prosím, na čísle 773 000 976 a/nebo na emailu jimmyroberts2009@gmail.com. Děkuji za návštěvu mé webové stránky. :-)"
 }
-
+          
 window.onload = function() {
 
     const languageSelector = document.getElementById('languagePicker');
     const translatables = document.querySelectorAll('[data-tk]');
+    console.log(translatables)
     let currentLanguage; // possible values: "en", "cs"
 
     if (window.localStorage.getItem("language") === "en") {
@@ -113,6 +114,7 @@ window.onload = function() {
     }
 
     languageSelector.addEventListener('change', function(event) {
+        console.log(event)
         if (event.target.value === "en") {
             window.localStorage.setItem("language", "en");
             currentLanguage = "en";
@@ -142,5 +144,5 @@ window.onload = function() {
         }
     }
 
-    translate()
+    translate() 
 }
