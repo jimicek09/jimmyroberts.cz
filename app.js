@@ -144,5 +144,5 @@ window.onload = function() {
         }
     }
 
-    // translate() 
+    translate() 
 }
