@@ -7,19 +7,26 @@ let y = 0;
 let dx = true
 let dy = true
 let i = 0;
+
 const speed = 5
-const screenHeight = 800
-const screenWidth = 1500
-const ballHeight = 5
-const ballWidth = 5
+const screenHeight = 600
+const screenWidth = 1000
+const ballHeight = 10
+const ballWidth = 10
+
+
+canvas.height = screenHeight;
+canvas.width = screenWidth;
+
 //const pad = canvas.getContext("2d");
 //pad.fillStyle = "white";
 //pad.fillRect(0, 0, 15, 50);
-canvas.style.height = `${screenHeight}px`;
-canvas.style.width = `${screenWidth}px`;
 canvas.style.border = "solid 1px black";
+
+let ballColor = 0;
+
 const interval = setInterval(function () {
-    ctx.clearRect(x, y, ballWidth, ballHeight)
+    // ctx.clearRect(x, y, ballWidth, ballHeight)
     if (y >= screenHeight - ballHeight){
         dy = false
     } 
@@ -30,15 +37,8 @@ const interval = setInterval(function () {
     if (x <= 0) dx = true
     x = dx ? x + speed : x - speed
     y = dy ? y + speed : y - speed
-}, 16);
-
-(function () {
-  window.addEventListener("resize", resizeCanvas, false);
-
-  function resizeCanvas() {
-    canvas.width = container.clientWidth;
-    canvas.height = container.clientHeight;
-    ctx.fillRect(x,y,canvas.width, canvas.height)
-  }
-  resizeCanvas();
-})();
+    ballColor++
+    if (ballColor > 16777215) ballColor = 0
+    ctx.fillStyle = `#${ballColor.toString(16)}`;
+    ctx.fillRect(x, y, ballWidth, ballHeight)
+}, 5);
