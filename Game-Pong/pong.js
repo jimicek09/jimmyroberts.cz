@@ -11,14 +11,15 @@ let i = 0;
 
 let ballColor = Math.floor(Math.random() * 0xffffff);
 
-const speed = 5
+const speed = 1
 const screenHeight = 600
 const screenWidth = 1000
 // const ballSize = Math.floor(Math.random() * 100);
 const ballSize = 90;
 
 // const colorIncrement = Math.floor(Math.random() * 100);
-const colorIncrement = 31245;
+const colorIncrement = 1;
+// const colorIncrement = 31245;
 
 
 canvas.height = screenHeight;
@@ -36,7 +37,7 @@ let running = false;
 
 function start() {
   interval = setInterval(function () {
-    // ctx.clearRect(x, y, ballWidth, ballHeight)
+    // ctx.clearRect(x,ss y, ballSize, ballSize)
     running = true;
     if (y >= screenHeight - ballSize){
         dy = false
@@ -54,7 +55,7 @@ function start() {
     ctx.fillStyle = hexColor;
     colorCodeReadOut.innerText = hexColor; 
     ctx.fillRect(x, y, ballSize, ballSize)
-}, 1);
+}, 5);
 }
 
 function stop() {
