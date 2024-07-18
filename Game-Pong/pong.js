@@ -12,18 +12,10 @@ let i = 0;
 let paddleY = 200
 let paddleYOld
 
-let ballColor = Math.floor(Math.random() * 0xffffff);
-
 const speed = 5
 const screenHeight = 600
 const screenWidth = 1000
-//const ballSize = Math.floor(Math.random() * 100);
-const ballSize = 60;
-
-const colorIncrement = Math.floor(Math.random() * 0);
-//const colorIncrement = 1;
-//const colorIncrement = 1;
-
+const ballSize = 30;
 
 canvas.height = screenHeight;
 canvas.width = screenWidth;
@@ -40,32 +32,41 @@ document.addEventListener("keypress", function(event) {
       console.log("w pressed" )
       // do something
       paddleYOld = paddleY
-      if (paddleY > 0 || paddleY < 600)
-      paddleY = paddleY - 10
+      if (paddleY - 20 >= 0) {
+      paddleY = paddleY - 20
+      }
       break;
     case 115:
       console.log("s pressed")
       // doi something else
       paddleYOld = paddleY
-      if (paddleY > 0 || paddleY < 600) {
-      paddleY = paddleY + 10
+      if (paddleY + 120 + 20 <= 600) {
+      paddleY = paddleY + 20
       };
       break;
   }
 
 });
 
-
-
 function start() {
   interval = setInterval(function () {
-    reRenderBall()
-    // render paddle
-    paddle.clearRect(60, paddleYOld, 35, 120);
+    // renderpaddle.clearRect(60, paddleYOld, 35, 120);
     paddle.fillRect(60, paddleY, 35, 120);
     paddle.fillStyle = "black";
-    
+    reRenderBall()
+    // render paddle
+    reRenderPaddle()
+
+    if (x == 95) {
+      
+    }
   }, 5);
+}
+
+function reRenderPaddle() {
+  paddle.clearRect(60, paddleYOld, 35, 120);
+  paddle.fillRect(60, paddleY, 35, 120);
+  paddle.fillStyle = "black";
 }
 
 function reRenderBall(){
@@ -81,10 +82,6 @@ function reRenderBall(){
   if (x <= 0) dx = true
   x = dx ? x + speed : x - speed
   y = dy ? y + speed : y - speed
-  ballColor = ballColor + colorIncrement
-  if (ballColor > 16777215) ballColor = 0
-  const hexColor = `#${ballColor.toString(16)}`
-  ctx.fillStyle = hexColor;
   //colorCodeReadOut.innerText = hexColor; 
   ctx.fillRect(x, y, ballSize, ballSize)
 }
