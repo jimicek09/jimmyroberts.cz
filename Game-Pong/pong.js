@@ -12,7 +12,7 @@ let i = 0;
 let paddleY = 200
 let paddleYOld
 
-const speed = 5
+const speed = 4
 const screenHeight = 600
 const screenWidth = 1000
 const ballSize = 30;
@@ -57,8 +57,13 @@ function start() {
     // render paddle
     reRenderPaddle()
 
-    if (x == 95) {
-      
+    if (x <= 95) {
+      console.log("good")
+      if (y > paddleY + 120 || y < paddleY) {
+//        alert("game Over")
+      } else {
+          dx = true
+      }
     }
   }, 5);
 }
